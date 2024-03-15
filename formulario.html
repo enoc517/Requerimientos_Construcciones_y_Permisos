@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con CSS</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* Estilos opcionales para el ejemplo */
+    .container {
+      height: 2000px; /* Altura suficiente para desplazarse */
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+  </style>
+  <script>
+    // JavaScript para desplazar hacia abajo
+    window.onload = function() {
+      // Ajusta el tiempo de desplazamiento y la cantidad de desplazamiento según tus necesidades
+      var scrollDelay = 3000; // Tiempo en milisegundos (1 segundo = 1000 ms)
+      var scrollAmount = 400; // Cantidad de píxeles a desplazar
+    
+      setTimeout(function() {
+        window.scrollBy(0, scrollAmount); // Desplaza hacia abajo
+      }, scrollDelay);
+    };
+    </script>
+</head>
+<body class="vh-100 overflow-hidden">
+
+  <div class="containerform">
+   <h1>Formulario para Permiso de Construccione</h1>
+   <form method="post">
+    <div class="nombre">
+      <input type="text" required>
+      <label>Nombre</label>
+    </div>
+    <div class="apellido">
+      <input type="text">
+      <label>Apellidos</label>
+    </div>
+    <div class="cedula">
+      <input type="text" required>
+      <label>Cedula</label>
+    </div>
+    <div class="correo">
+      <input type="text" required>
+      <label>Correo</label>
+    </div>
+    <div class="direccion">
+      <input type="text" required>
+      <label>Direccion</label>
+    </div>
+    <div class="fax">
+      <input type="text" required>
+      <label>Fax</label>
+    </div>
+    <h2>Ubicacion de la propiedad</h2>
+    <br>
+    <div class="distrito">
+      <input type="text" required>
+      <label>Distrito</label>
+    </div>
+    <div class="direccionexacta">
+      <input type="text" required>
+      <label>Direccion Exacta</label>
+    </div>
+    <div class="barrio">
+      <input type="text" required>
+      <label>Barrio</label>
+    </div>
+    <label for="opciones">Selecciona una opción:</label>
+    <select id="opciones" name="opciones">
+      <option value="construir">Construir</option>
+      <option value="remodelar">Remodelar</option>
+      <option value="demolicion">Demolicion</option>
+    </select>
+
+   </form>
+  </div>
+
+</body>
+</html>
