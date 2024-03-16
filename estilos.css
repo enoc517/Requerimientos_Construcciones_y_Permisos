@@ -189,6 +189,54 @@
 .header{
   background-color: #6ea8fe;
 }
+
+/*css para el formulario inicio*/
+.contenedora{
+  display: flexbox;
+  height:100%
+}
+.formulario{
+  padding: 30px,80px;
+  width: 50%;
+  display: block;
+  height: 100%;
+}
+.formulario h2{
+  font-size: 30px;
+  color: #055160;
+  margin-bottom: 25px;
+}
+.formulario p{
+  font-size: 16px;
+  color: #0f5132;
+  margin-bottom: 25px;
+}
+label{
+  font-size: 15px;
+  color: #0a3622;
+ margin-bottom: 25px;
+}
+.box{
+  border: 0;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  outline: none;
+  text-emphasis: none;
+}
+.rectangulo1,.rectangulo2{
+  margin: auto;
+  flex: 1;
+  border: 0;
+  background-color: #D6CBE1;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  outline: none;
+  text-emphasis: none;
+
+}
 .contenedorder {
   display: flex;
   align-items: center; /* Centra verticalmente los elementos */
@@ -278,8 +326,8 @@
   background-color: #0b7dda;
 }
 .contenedorder img {
-  width: 50%; /* Ajusta el tamaño de la imagen según tus necesidades */
-  margin-left: 20px; /* Espacio entre la imagen y el texto */
+  width: 100%; /* Ajusta el tamaño de la imagen según tus necesidades */
+ height: 100%;
   order: 2; /* Cambia el orden para que la imagen aparezca al final */
 }
 
